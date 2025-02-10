@@ -28,6 +28,20 @@ def main():
                 print("LEFT_BRACE { null")
             elif char == '}':
                 print("RIGHT_BRACE } null")
+            elif char == '*':
+                print("STAR * null")
+            elif char == '.':
+                print("DOT . null")
+            elif char == ',':
+                print("COMMA , null")
+            elif char == '+':
+                print("PLUS + null")
+            elif char == '-':
+                print("MINUS - null")
+            elif char == ';':
+                print("SEMICOLON ; null")
+            elif char == '/':
+                print("SLASH / null")
 
         # Print EOF token at the end
         print("EOF  null")
