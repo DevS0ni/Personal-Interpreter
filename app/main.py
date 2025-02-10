@@ -18,12 +18,21 @@ def main():
 
     with open(filename) as file:
         file_contents = file.read()
+        
+        for char in file_contents:
+            if char == "(":
+                print("LEFT_PAREN ( null")
+            if char == ")":
+                print("RIGHT_PAREN ) null")
 
-    if file_contents:
-        raise NotImplementedError("Scanner not implemented")
-    else:
-        print("EOF  null") # Placeholder, remove this line when implementing the scanner
+        # Print EOF token at the end
+        print("EOF  null")
 
+    # if file_contents:
+    #    raise NotImplementedError("Scanner not implemented")
+    # else:
+    #    print("EOF null") #Placeholder, remove this line when implementing the scanner
+    pass
 
 if __name__ == "__main__":
     main()
