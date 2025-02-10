@@ -20,10 +20,14 @@ def main():
         file_contents = file.read()
         
         for char in file_contents:
-            if char == "(":
+            if char == '(':
                 print("LEFT_PAREN ( null")
-            if char == ")":
+            elif char == ')':
                 print("RIGHT_PAREN ) null")
+            elif char == '{':
+                print("LEFT_BRACE { null")
+            elif char == '}':
+                print("RIGHT_BRACE } null")
 
         # Print EOF token at the end
         print("EOF  null")
